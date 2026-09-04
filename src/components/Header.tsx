@@ -50,6 +50,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
           <a href="#about" className="hover:text-blue-500 transition-colors duration-300">About</a>
           <a href="#skills" className="hover:text-blue-500 transition-colors duration-300">Skills</a>
           <a href="#projects" className="hover:text-blue-500 transition-colors duration-300">Projects</a>
+          <a href="#automations" className="hover:text-blue-500 transition-colors duration-300">Automations</a>
           <a href="#contact" className="hover:text-blue-500 transition-colors duration-300">Contact</a>
           <button 
             onClick={toggleDarkMode} 
@@ -100,15 +101,22 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
           >
             Skills
           </a>
-          <a 
-            href="#projects" 
+          <a
+            href="#projects"
             className="py-2 hover:text-blue-500 transition-colors duration-300"
             onClick={() => setIsMenuOpen(false)}
           >
             Projects
           </a>
-          <a 
-            href="#contact" 
+          <a
+            href="#automations"
+            className="py-2 hover:text-blue-500 transition-colors duration-300"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Automations
+          </a>
+          <a
+            href="#contact"
             className="py-2 hover:text-blue-500 transition-colors duration-300"
             onClick={() => setIsMenuOpen(false)}
           >
